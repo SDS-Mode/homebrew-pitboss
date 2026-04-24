@@ -4,16 +4,16 @@ class PitbossTui < Formula
   version "0.8.0"
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/SDS-Mode/pitboss/releases/download/v0.8.0/pitboss-tui-aarch64-apple-darwin.tar.xz"
-    sha256 "dab2efa6db8a9a2a01253abc89e9f5bae44de3286e4ee8165b9bb02c80bea0f9"
+    sha256 "6c3ade4a6dbece903a094cd44b3bc8f10b16ac8a8450a87507e59246b7cb3dd3"
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/SDS-Mode/pitboss/releases/download/v0.8.0/pitboss-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d8f2f35e50d7682102189b0c561e44561c9172016d22d3ea868ae25172418f0f"
+      sha256 "fa76ee37d54f6b21b97e253abe7e0588ca6cafd68e7fd7aea9578a5812747ce2"
     end
     if Hardware::CPU.intel?
       url "https://github.com/SDS-Mode/pitboss/releases/download/v0.8.0/pitboss-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4ede5e5197dfb632640223219dae84b59ffca4b3149297b74eb862a8d12982d7"
+      sha256 "011f1295190a12104c707d040c253d5afdd1470b4832890cee4d017e609fadd4"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
