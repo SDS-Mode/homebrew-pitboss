@@ -4,16 +4,16 @@ class PitbossCli < Formula
   version "0.8.0"
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/SDS-Mode/pitboss/releases/download/v0.8.0/pitboss-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "ba762ee54b38462310268846097eb52d6ec04ff32d201cae37dcb1c2e32e4e9e"
+    sha256 "dae085a9156caea53ac0ded013a9fdcb1f8d9c30bbb382ebd95fb3907c7c998c"
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/SDS-Mode/pitboss/releases/download/v0.8.0/pitboss-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fcb99dd50989f9a07cb29a2b6cf6b7b8b620824ec4e5f357991132d83f62f324"
+      sha256 "8d515ee9fd500a4b478c2ca1482ec8932d8ba946e66824358368ea4843783610"
     end
     if Hardware::CPU.intel?
       url "https://github.com/SDS-Mode/pitboss/releases/download/v0.8.0/pitboss-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a4557899fb37a7b10910877ba083b5c8cec2a892f5ccddcc9ee5213673a1ea65"
+      sha256 "8e415dd6ddee1117b19a07b18da760e4a190200887611c35679535956adb10ff"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
