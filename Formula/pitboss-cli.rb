@@ -1,19 +1,19 @@
 class PitbossCli < Formula
   desc "Dispatcher for running and observing parallel Claude Code sessions."
   homepage "https://github.com/SDS-Mode/pitboss"
-  version "0.11.0"
+  version "0.12.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/SDS-Mode/pitboss/releases/download/v0.11.0/pitboss-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "fe26267b6cf656b4b65f4461bdcd22903eaf7b0ef0f6f6f8ce28c4d369c90939"
+    url "https://github.com/SDS-Mode/pitboss/releases/download/v0.12.0/pitboss-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "6eb837935b1dbf61b38358a0a0fe6da4985200bfd232d26fbd2224ffdf68183c"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.11.0/pitboss-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a8610c46d1567149906f125de87120b9b49434abfa20cb81f4de4ce3a97688ea"
+      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.12.0/pitboss-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ed6a6222c4e8e316f63121d206cbdbe107769d513e75263aa80bc56fe745e936"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.11.0/pitboss-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "600c18d24e807b5832edf92f0f02147d3a9992435e26d8d4d22c91ccabd72aae"
+      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.12.0/pitboss-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2c0d64af9b78a0aed4643f7e999191d917ad4b0ccbf411bca4bbc5407ddbdd96"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
