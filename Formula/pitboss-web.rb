@@ -1,19 +1,19 @@
 class PitbossWeb < Formula
   desc "Web operational console for the Pitboss dispatcher"
   homepage "https://github.com/SDS-Mode/pitboss"
-  version "0.10.0"
+  version "0.11.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/SDS-Mode/pitboss/releases/download/v0.10.0/pitboss-web-aarch64-apple-darwin.tar.xz"
-    sha256 "aeb7ee7e34330e9476b1e7a73c23ea7e013cd79950117152bc097a16c12d4422"
+    url "https://github.com/SDS-Mode/pitboss/releases/download/v0.11.0/pitboss-web-aarch64-apple-darwin.tar.xz"
+    sha256 "dbdeb21710268b225fa21b31859a147060baaf347a983aa3bdb00125ee54d3b1"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.10.0/pitboss-web-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "873b4756ba81af585cdeefda3b3a619cafb282d870d804bab073559c54774ca1"
+      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.11.0/pitboss-web-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1563e7cd6f83a4761d7ba615cba4e3a52bf4e0449ee23219ac9a2bb18bb7387a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.10.0/pitboss-web-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2577f56b1419f8f0da984a1de676d44847d4a1d6e7266d19bb02ebcb12815188"
+      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.11.0/pitboss-web-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "115e4cef11fbb31f4b19c0e48174b7052769121b7adf622dbd21b9f61673af26"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
