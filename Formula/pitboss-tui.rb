@@ -1,19 +1,19 @@
 class PitbossTui < Formula
   desc "TUI companion for pitboss — live tile grid, log tailing, budget counters."
   homepage "https://github.com/SDS-Mode/pitboss"
-  version "0.15.0"
+  version "0.16.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/SDS-Mode/pitboss/releases/download/v0.15.0/pitboss-tui-aarch64-apple-darwin.tar.xz"
-    sha256 "fd4ab35cb06e104613bda94d792bd9da6af6c8babc54f087d1d25c06f003ae3b"
+    url "https://github.com/SDS-Mode/pitboss/releases/download/v0.16.0/pitboss-tui-aarch64-apple-darwin.tar.xz"
+    sha256 "4076df7b1bfb7db81c209ed3906ca25c4e141f5e289da355f60629689d5ee089"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.15.0/pitboss-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a2ff1297c0beb328756b087dd2df2b06bee26c56e28a3db0dd0e57b760028a8b"
+      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.16.0/pitboss-tui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a17fa42a0fa50e220db22ae546689ffaf84fd125a041cf5798a20eb4139028f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.15.0/pitboss-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b6af31296f7930e515f2e502df2da343b0f159537cb5702aa79f0ef4b0e73ba5"
+      url "https://github.com/SDS-Mode/pitboss/releases/download/v0.16.0/pitboss-tui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2dfe4d9f567d578d4966e945066c38b13940e7987e60856a17ee1edd92a8137b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
